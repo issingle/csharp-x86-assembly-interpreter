@@ -1,4 +1,0 @@
-D:\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\ICSharpCode.TextEditor.XML
-D:\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\ICSharpCode.TextEditor.dll
-D:\School\Loyola\Spring 2011\Comp 398\FinalProject\ICSharpCode.TextEditor\obj\Release\ResolveAssemblyReference.cache
-D:\School\Loyola\Spring 2011\Comp 398\FinalProject\ICSharpCode.TextEditor\obj\Release\ICSharpCode.TextEditor.dll
