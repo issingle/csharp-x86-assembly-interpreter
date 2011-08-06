@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>x86</name>
+    </assembly>
+    <members>
+        <member name="T:x86.ExecutionEnvironment">
+            <summary>
+            Basic x86 execution environment.
+            </summary>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.UpdateEFlags(System.UInt64,System.UInt32,x86.EFlags)">
+            <summary>
+            Updates the EFlags based on the result.
+            </summary>
+            <param name="result">The integer result. Uses unsigned 64-bit value as the accumulator to test for overflows.</param>
+            <param name="size">Destination size of the result in bytes.</param>
+            <param name="flags">Flags to be updated.</param>
+        </member>
+        <member name="F:x86.ExecutionEnvironment.BaseAddress">
+            <summary>
+            Memory base address.
+            </summary>
+        </member>
+        <member name="F:x86.ExecutionEnvironment.Memory">
+            <summary>
+            Memory data.
+            </summary>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.ReadByteFromMemory(System.UInt32)">
+            <summary>
+            Reads a byte of memory from the specified address.
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.ReadWordFromMemory(System.UInt32)">
+            <summary>
+            Reads a word of memory from the specified address.
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.ReadDoublewordFromMemory(System.UInt32)">
+            <summary>
+            Reads a doubleword of memory from the specified address.
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.WriteByteToMemory(System.UInt32,System.Byte)">
+            <summary>
+            Writes a byte to the specified address in memory.
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.WriteWordToMemory(System.UInt32,System.UInt16)">
+            <summary>
+            Writes a word to the specified address in memory.
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.WriteDoublewordToMemory(System.UInt32,System.UInt32)">
+            <summary>
+            Writes a doubleword to the specified address in memory.
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.WriteMemory(System.UInt32,System.Object)">
+            <summary>
+            Writes a value to the specified address in memory.  The value must either be 1, 2, or 4 bytes in length.
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.ReadMemory(System.UInt32,System.UInt32)">
+            <summary>
+            Reads a value of specified size from the specified address in memory.
+            </summary>
+            <param name="address"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.GetValidMemoryRange">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.GoTo(System.String[]@,System.Int32)">
+            <summary>
+            Attempts to jump to the next instruction in the stream after the specified line number.
+            </summary>
+            <param name="instructions">The lines of instructions in the editor window.</param>
+            <param name="line">The line (starting from 1) to jump to.</param>
+            <returns>Whether or not a next instruction was found.</returns>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.GoTo(System.String[]@,System.String)">
+            <summary>
+            Attempts to jump to the instruction immediately following the specified label.
+            </summary>
+            <param name="instructions">The lines of instructions in the editor window.</param>
+            <param name="label">The label to jump to.</param>
+            <returns>Whether or not a next instruction was found.</returns>
+        </member>
+        <member name="M:x86.ExecutionEnvironment.Reset">
+            <summary>
+            Resets the execution state.
+            </summary>
+        </member>
+        <member name="T:x86.Expression">
+            <summary>
+            A stripped down and modified version of http://jarloo.com/code/math/c-formula-evaluator/
+            </summary>
+        </member>
+        <member name="M:x86.Expression.Evaluate(System.String)">
+            <summary>
+            Attempts to evaluate the specified instruction and return a numerical result.
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:x86.InstructionArgument.#ctor(x86.ExecutionEnvironment,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+        </member>
+        <member name="M:x86.InstructionArgument.GetValue">
+            <summary>
+            Gets the unsigned integer value of this argument.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:x86.InstructionArgument.SetValue(System.UInt32)">
+            <summary>
+            Sets the argument's value and automagically casts according to its data type.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:x86.Register">
+            <summary>
+            Basic 32-bit register container.
+            </summary>
+        </member>
+        <member name="F:x86.Register.Value">
+            <summary>
+            The value of the register.
+            </summary>
+        </member>
+        <member name="M:x86.Register.#ctor">
+            <summary>
+            Initializes the register with a value of zero.
+            </summary>
+        </member>
+        <member name="M:x86.Register.#ctor(System.UInt32)">
+            <summary>
+            Initializes the register with the specified value.
+            </summary>
+            <param name="value">Register value.</param>
+        </member>
+        <member name="M:x86.Register.SetValue(x86.RegisterSubType,System.UInt32)">
+            <summary>
+            Sets the specified part of the register to the specified value.
+            </summary>
+            <param name="type">The specific part of the register to set.</param>
+            <param name="value">The value to set.</param>
+        </member>
+        <member name="M:x86.Register.GetValue(x86.RegisterSubType)">
+            <summary>
+            Gets the value of the specified part of the register.
+            </summary>
+            <param name="type">The specific part of the register to get.</param>
+            <returns></returns>
+        </member>
+        <member name="M:x86.Register.op_Implicit(x86.Register)~System.UInt32">
+            <summary>
+            Allows automatic casting from a register to an unsigned int.
+            </summary>
+            <param name="reg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:x86.Register.op_Implicit(System.UInt32)~x86.Register">
+            <summary>
+            Allows automatic casting from an unsigned int to a register.
+            </summary>
+            <param name="reg"></param>
+            <returns></returns>
+        </member>
+        <member name="P:x86.Register.LowWord">
+            <summary>
+            The low 16 bits of the register.
+            </summary>
+        </member>
+        <member name="P:x86.Register.HighByte">
+            <summary>
+            The high 8 bits of the low register word.
+            </summary>
+        </member>
+        <member name="P:x86.Register.LowByte">
+            <summary>
+            The low 8 bits of the register.
+            </summary>
+        </member>
+        <member name="T:x86.Eax">
+            <summary>
+            Accumulator for operands and results data.
+            </summary>
+        </member>
+        <member name="T:x86.Ebx">
+            <summary>
+            Data pointer.
+            </summary>
+        </member>
+        <member name="T:x86.Ecx">
+            <summary>
+            Counter for string and loop operations.
+            </summary>
+        </member>
+        <member name="T:x86.Edx">
+            <summary>
+            I/O pointer.
+            </summary>
+        </member>
+        <member name="T:x86.Esp">
+            <summary>
+            Stack pointer.
+            </summary>
+        </member>
+        <member name="T:x86.Ebp">
+            <summary>
+            Stack frame pointer.
+            </summary>
+        </member>
+        <member name="T:x86.Esi">
+            <summary>
+            Source pointer for string operations.
+            </summary>
+        </member>
+        <member name="T:x86.Edi">
+            <summary>
+            Destination pointer for string operations.
+            </summary>
+        </member>
+        <member name="T:x86.EFlags">
+            <summary>
+            Mapping of all basic execution status flags. System and reserved flags are not included.
+            </summary>
+        </member>
+        <member name="F:x86.EFlags.CarryFlag">
+            <summary>
+            CF. Set if an arithmetic operation generates a carry or a borrow out 
+            of the most-significant bit of the result; cleared if otherwise.  This flag 
+            indicates an overflow condition for unsigned-integer arithmetic. It is also 
+            used in multiple-precision arithmetic.
+            </summary>
+        </member>
+        <member name="F:x86.EFlags.ParityFlag">
+            <summary>
+            PF. Set if the least-significant byte of the result contains an even 
+            number of 1 bits; cleared otherwise.
+            </summary>
+        </member>
+        <member name="F:x86.EFlags.AdjustFlag">
+            <summary>
+            AF. Set if an arithmetic operation generates a carry or a borrow out 
+            of bit 3 of the result; cleared otherwise. This flag is used in BCD arithmetic.
+            </summary>
+        </member>
+        <member name="F:x86.EFlags.ZeroFlag">
+            <summary>
+            ZF. Set if the result is zero; cleared otherwise.
+            </summary>
+        </member>
+        <member name="F:x86.EFlags.SignFlag">
+            <summary>
+            SF. Set equal to the most-significant bit of the result, which is the 
+            sign bit of a signed integer.  Zero indicates a positive value and one indicates 
+            a negative value.
+            </summary>
+        </member>
+        <member name="F:x86.EFlags.DirectionFlag">
+            <summary>
+            DF. When set, causes string instructions to auto-decrement (process 
+            strings from high to low addresses), otherwise they auto-increment by default.
+            </summary>
+        </member>
+        <member name="F:x86.EFlags.OverflowFlag">
+            <summary>
+            OF. Set if the integer result is too large a positive number or too 
+            small a negative number (excluding the sign-bit) to fit in the destination operand; 
+            cleared otherwise. This flag indicates an overflow condition for signed-integer 
+            (two's complement) arithmetic.
+            </summary>
+        </member>
+    </members>
+</doc>

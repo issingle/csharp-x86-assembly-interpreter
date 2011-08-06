@@ -1,0 +1,22 @@
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\Interpreter.exe
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\Interpreter.pdb
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\DotNetPerls.BetterDialog.resources
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.Form1.resources
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.Properties.Resources.resources
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.exe
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.pdb
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\Interpreter.exe.config
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Mike\Desktop\New Drive Structure\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\Interpreter.exe.config
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.exe
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.pdb
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\Interpreter.exe
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\bin\Interpreter.pdb
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\DotNetPerls.BetterDialog.resources
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.Form1.resources
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\Interpreter.Properties.Resources.resources
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\School\Loyola\Spring 2011\Comp 398\FinalProject\Interpreter\obj\x86\Debug\GenerateResource.write.1.tlog
